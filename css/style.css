@@ -12,7 +12,7 @@
     --modal-bg-color:#fff;
     --bg-transparent-color: rgba(0, 0, 0, 0.1);
     --transparent-color-01:rgba(0, 0, 0, 0.1);
-    --transparent-color-02:rgba(209, 89, 173, 0.1);
+    --transparent-color-02:rgba(230, 123, 141, 0.063);
     --line-color: #d7d7d7;
 
     --color-filter: invert(1);
@@ -463,43 +463,9 @@ font-size: 1.2em;
 
 }
 
-.about .container::before{
-    position: absolute;
-    content: '';
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    left: 100%;
-    top: 12%;
-    background: linear-gradient(45deg, var(--second-color), rgb(239, 150, 165));
-    animation: object3 5s linear infinite;
-}
 
-@keyframes object3{
-    50%{
-        left: 100%;
-        top: 10%;
-    }
-}
 
-.about .container::after{
-    position: absolute;
-    content: '';
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    left: 96%;
-    top: 25%;
-    background: linear-gradient(45deg, var(--second-color), rgb(239, 150, 165));
-    animation: object4 9s linear infinite;
-}
 
-@keyframes object4{
-    50%{
-        left: 96%;
-        top: 23%;
-    }
-}
 
 
 
@@ -544,24 +510,7 @@ font-size: 1.2em;
     width: 100%;
 }
 
-.portfolio .container::before{
-    position: absolute;
-    content: '';
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    left: -10%;
-    top: 5%;
-    background: linear-gradient(45deg, var(--second-color), rgb(239, 150, 165));
-    animation: object5 9s linear infinite;
-}
 
-@keyframes object5{
-    50%{
-        left: -18%;
-        top: 7%;
-    }
-}
 /*
 .portfolio .container::after{
     position: absolute;
@@ -747,44 +696,9 @@ font-size: 1.2em;
     width: 100%;
 }
 
-.contact .container::before{
 
-        position: absolute;
-        content: '';
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        left: 100%;
-        top: 10%;
-        background: linear-gradient(45deg, var(--second-color), rgb(239, 150, 165));
-        animation: object7 5s linear infinite;
-    }
-    
-    @keyframes object7{
-        50%{
-            left: 100%;
-            top: 8%;
-        }
-    }
 
-    .contact .container::after{
-        position: absolute;
-        content: '';
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        left: 105%;
-        top: 5%;
-        background: linear-gradient(45deg, var(--second-color), rgb(239, 150, 165));
-        animation: object4 5s linear infinite;
-    }
-    
-    @keyframes object4{
-        50%{
-            left: 105%;
-            top: 3%;
-        }
-    }
+   
  
 .contact-left h2{
     font-size: 2.1em;
