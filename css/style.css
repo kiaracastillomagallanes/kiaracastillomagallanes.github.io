@@ -511,30 +511,11 @@ font-size: 1.2em;
 }
 
 
-/*
-.portfolio .container::after{
-    position: absolute;
-    content: '';
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    left: 105%;
-    top: 75%;
-    background: linear-gradient(45deg, var(--second-color), rgb(239, 150, 165));
-    animation: object6 5s linear infinite;
-}
-
-@keyframes object6{
-    50%{
-        left: 105%;
-        top: 73%;
-    }
-} */
 
 
 .portfolio-list{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   max-width: 100%;
   gap: 35px;
   margin: 0 auto;
@@ -619,7 +600,7 @@ font-size: 1.2em;
 .portfolio-model-body{
     position: relative;
     background: var(--modal-bg-color);
-    max-width: 900px;
+    max-width: 990px;
     height: 680px;
     margin: 20px;
     padding: 40px;
@@ -647,7 +628,7 @@ font-size: 1.2em;
 
 .portfolio-model-body p{
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .portfolio-model-body img{
@@ -665,7 +646,7 @@ font-size: 1.2em;
 }
 .portfolio-model-body .tools h4{
     color: var(--first-color);
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 5px;
 
 
@@ -679,7 +660,7 @@ font-size: 1.2em;
 
 .portfolio-model-body .tools li{
     color: var(--thrid-color);
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 20px;
     
    
@@ -761,7 +742,7 @@ font-size: 1.2em;
 
 .contact-form textarea{
     width: 100%;
-    resize: none;
+    height: 80px;
 }
 
 ::placeholder{
