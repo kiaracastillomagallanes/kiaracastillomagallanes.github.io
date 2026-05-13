@@ -1760,3 +1760,28 @@ li{
         text-align: center;
     }
 }
+
+/* ==============================
+   SAKURA-CON DISCLAIMER
+============================== */
+
+.sakura-disclaimer {
+    background: #fff4f7;
+    border-left: 6px solid #e6738f;
+    border-radius: 18px;
+    padding: 22px 26px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    box-shadow: 0 12px 28px rgba(20, 35, 51, 0.06);
+}
+
+.sakura-disclaimer p {
+    color: #334155;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.sakura-disclaimer strong {
+    color: #142333;
+}
