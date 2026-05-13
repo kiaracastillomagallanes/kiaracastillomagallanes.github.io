@@ -1,0 +1,394 @@
+/* =====================================================
+   MY DESIGN PROCESS PAGE
+   Separate CSS file to avoid conflicts with Sakura page
+===================================================== */
+
+.process-page {
+    width: 100%;
+    background: #ffffff;
+    color: #142333;
+    padding-bottom: 90px;
+}
+
+.process-container {
+    width: min(88%, 1050px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HERO */
+.process-hero {
+    padding-top: 145px;
+    padding-bottom: 45px;
+}
+
+.process-back-link {
+    display: inline-block;
+    color: #6a5dc4;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.process-back-link:hover {
+    text-decoration: underline;
+}
+
+.process-kicker {
+    color: #6a5dc4;
+    font-weight: 800;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+}
+
+.process-hero h1 {
+    max-width: 950px;
+    color: #142333;
+    font-size: clamp(3.2rem, 6vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    margin-bottom: 24px;
+}
+
+.process-intro {
+    max-width: 880px;
+    color: #334155;
+    font-size: 1.12rem;
+    line-height: 1.85;
+}
+
+/* INFO CARDS */
+.process-info-grid {
+    margin-top: 20px;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.process-info-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 14px 32px rgba(20, 35, 51, 0.07);
+    border: 1px solid rgba(106, 93, 196, 0.12);
+}
+
+.process-info-card h3 {
+    color: #6a5dc4;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.process-info-card h4 {
+    color: #142333;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.process-info-card p {
+    color: #64748b;
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+/* LANDSCAPE IMAGE */
+.process-image-section {
+    margin-top: 25px;
+    margin-bottom: 95px;
+}
+
+.process-landscape-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 18px;
+    box-shadow: 0 18px 42px rgba(20, 35, 51, 0.09);
+    border: 1px solid rgba(106, 93, 196, 0.14);
+}
+
+.process-landscape-card img {
+    width: 100%;
+    max-height: 560px;
+    object-fit: cover;
+    display: block;
+    border-radius: 22px;
+}
+
+/* GENERAL SECTIONS */
+.process-section,
+.process-doc-section,
+.process-reflection,
+.process-philosophy-card {
+    margin-top: 95px;
+    margin-bottom: 95px;
+}
+
+.process-section h2,
+.process-doc-intro h2,
+.process-philosophy-card h2,
+.process-reflection h2 {
+    color: #142333;
+    font-size: clamp(2.25rem, 4vw, 3.4rem);
+    line-height: 1.12;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.process-section p,
+.process-doc-intro p,
+.process-philosophy-card p,
+.process-reflection p {
+    max-width: 900px;
+    color: #334155;
+    font-size: 1.12rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.process-line {
+    width: 76px;
+    height: 6px;
+    background: #6a5dc4;
+    border-radius: 20px;
+    margin: 18px 0 32px;
+}
+
+/* PDF VIEWER */
+.process-pdf-card {
+    margin-top: 36px;
+    background: #ffffff;
+    border: 1px solid rgba(106, 93, 196, 0.18);
+    border-radius: 26px;
+    box-shadow: 0 16px 38px rgba(20, 35, 51, 0.08);
+    overflow: hidden;
+}
+
+.process-pdf-card summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 26px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process-pdf-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.process-pdf-card summary div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.process-pdf-card summary span {
+    color: #142333;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.process-pdf-card summary small {
+    color: #6a5dc4;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.process-pdf-card summary::after {
+    content: "+";
+    width: 34px;
+    height: 34px;
+    background: #6a5dc4;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.process-pdf-card[open] summary::after {
+    content: "−";
+}
+
+.process-pdf-actions {
+    display: flex;
+    gap: 14px;
+    padding: 0 30px 24px;
+    flex-wrap: wrap;
+}
+
+.process-doc-btn {
+    display: inline-block;
+    background: #6a5dc4;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 12px 24px rgba(106, 93, 196, 0.22);
+}
+
+.process-doc-btn.secondary {
+    background: #ffffff;
+    color: #6a5dc4;
+    border: 1px solid rgba(106, 93, 196, 0.28);
+    box-shadow: none;
+}
+
+.process-pdf-frame {
+    width: 100%;
+    height: 720px;
+    background: #ffffff;
+    border-top: 1px solid rgba(106, 93, 196, 0.18);
+}
+
+.process-pdf-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* SPLIT SECTION */
+.process-split {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 42px;
+    align-items: center;
+}
+
+.process-sketch-card {
+    background: #ffffff;
+    border-radius: 26px;
+    padding: 16px;
+    box-shadow: 0 16px 38px rgba(20, 35, 51, 0.08);
+    border: 1px solid rgba(106, 93, 196, 0.14);
+}
+
+.process-sketch-card img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+/* STEPS */
+.process-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 38px;
+}
+
+.process-steps-grid article {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 26px;
+    box-shadow: 0 14px 34px rgba(20, 35, 51, 0.07);
+    border: 1px solid rgba(106, 93, 196, 0.12);
+}
+
+.process-steps-grid span {
+    display: block;
+    color: #6a5dc4;
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.process-steps-grid h3 {
+    color: #142333;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.process-steps-grid p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* PHILOSOPHY CARD */
+.process-philosophy-card {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    padding: 48px;
+    border-radius: 30px;
+    box-shadow: 0 18px 42px rgba(20, 35, 51, 0.09);
+    border: 1px solid rgba(106, 93, 196, 0.14);
+}
+
+.process-philosophy-card h2 {
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
+}
+
+/* REFLECTION */
+.process-reflection {
+    background: #ffffff;
+    padding: 46px;
+    border-radius: 30px;
+    box-shadow: 0 18px 42px rgba(20, 35, 51, 0.09);
+    border: 1px solid rgba(106, 93, 196, 0.14);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 950px) {
+    .process-container {
+        width: 90%;
+    }
+
+    .process-info-grid,
+    .process-split {
+        grid-template-columns: 1fr;
+    }
+
+    .process-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-pdf-frame {
+        height: 560px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .process-hero {
+        padding-top: 130px;
+    }
+
+    .process-hero h1 {
+        font-size: 3rem;
+        letter-spacing: -1.5px;
+    }
+
+    .process-intro,
+    .process-section p,
+    .process-doc-intro p,
+    .process-philosophy-card p,
+    .process-reflection p {
+        font-size: 1rem;
+    }
+
+    .process-steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-philosophy-card,
+    .process-reflection {
+        padding: 30px;
+    }
+
+    .process-pdf-card summary {
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .process-pdf-frame {
+        height: 460px;
+    }
+}
